@@ -1,5 +1,8 @@
 /*  This is to count cards
-    an example from head first c  
+    an example from head first c
+
+    to run:
+    gcc cards.c -o cards && cards  
 */
 #include <stdio.h>
 
@@ -7,6 +10,8 @@ int main()
 {
     int count = 0;
     int reps = 10;
+    printf("count is stored at %p\n\n", &count); //& is the address of operator
+        
     while (reps >= 0)
     {
         reps --; 
@@ -41,6 +46,7 @@ int main()
         // printf("There are %i cards\n", (decks * 52));
         printf("The value is %i \n", (val));
         printf("The value of the count is %i.\n", count);
+
     }
     return 0;
 }
